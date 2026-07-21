@@ -4,16 +4,26 @@
 
 ### AI-Powered Indian Road Accident Analysis & Severity Prediction Platform
 
-<p>
-An intelligent machine learning platform that analyzes Indian road accident data, predicts accident severity, and provides interactive dashboards to support data-driven road safety decisions.
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=24&duration=3500&pause=1000&color=2F81F7&center=true&vCenter=true&width=800&lines=Road+Accident+Analysis+using+Machine+Learning;Accident+Severity+Prediction;Interactive+Analytics+Dashboard;Built+with+Python+%7C+Streamlit+%7C+Scikit-Learn" />
 </p>
 
-![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge\&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red?style=for-the-badge\&logo=streamlit)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge\&logo=scikitlearn)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-black?style=for-the-badge\&logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-blue?style=for-the-badge\&logo=numpy)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![GitHub Repo stars](https://img.shields.io/github/stars/roopeshARR/RoadSafeAI?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/roopeshARR/RoadSafeAI?style=for-the-badge)
+
+</p>
+
+<p align="center">
+An intelligent Machine Learning platform that analyzes Indian road accident data, predicts accident severity, and provides interactive dashboards for data-driven road safety insights.
+</p>
 
 </div>
 
@@ -21,52 +31,71 @@ An intelligent machine learning platform that analyzes Indian road accident data
 
 # 📖 Overview
 
-RoadSafe AI is an end-to-end machine learning platform designed to analyze Indian road accident data and predict accident severity. The project combines data preprocessing, machine learning, and interactive visualization into a single web application built with Streamlit.
+RoadSafe AI is an end-to-end Machine Learning application developed to analyze Indian road accident datasets and predict accident severity. The project combines data preprocessing, feature engineering, model training, evaluation, and an interactive Streamlit dashboard into one platform.
 
-The system helps users understand accident trends, identify high-risk conditions, and generate severity predictions using trained machine learning models.
+The objective is to help researchers, students, and transportation authorities understand accident patterns and generate actionable insights using AI.
 
 ---
 
 # ✨ Features
 
-* 📊 Interactive analytics dashboard
-* 🤖 Accident severity prediction
-* 📈 Data visualization and insights
-* 🧹 Automated data preprocessing pipeline
-* 🧠 Machine learning model training
-* 📂 Multiple dataset support
-* ⚡ Fast Streamlit web interface
-* 📋 Model evaluation metrics
-* 📉 Feature engineering pipeline
-* 🇮🇳 Built using Indian road accident datasets
+| Feature | Description |
+|---------|-------------|
+| 📊 Interactive Dashboard | Visualize accident statistics and trends |
+| 🤖 Severity Prediction | Predict accident severity using ML |
+| 📈 Data Analytics | Generate insights through charts and graphs |
+| 🧹 Data Preprocessing | Automated cleaning and feature engineering |
+| 🧠 Machine Learning | Model training and evaluation |
+| 📂 Dataset Management | Support for multiple accident datasets |
+| ⚡ Fast Web Interface | Streamlit-powered interactive application |
 
 ---
 
 # 🏗️ System Architecture
 
-```text
-                  Indian Accident Dataset
-                           │
-                           ▼
-                  Data Preprocessing
-                           │
-                           ▼
-                 Feature Engineering
-                           │
-                           ▼
-                  Machine Learning
-                           │
-          ┌────────────────┴───────────────┐
-          │                                │
-          ▼                                ▼
-  Model Evaluation                 Trained Model
-          │                                │
-          └──────────────┬─────────────────┘
-                         ▼
-               Streamlit Dashboard
-                         │
-                         ▼
-              Severity Prediction & Analytics
+```mermaid
+flowchart LR
+
+A[Indian Road Accident Dataset]
+--> B[Data Cleaning]
+
+B --> C[Feature Engineering]
+
+C --> D[Machine Learning Models]
+
+D --> E[Model Evaluation]
+
+E --> F[Saved Model]
+
+F --> G[Streamlit Dashboard]
+
+G --> H[Severity Prediction]
+
+G --> I[Analytics Dashboard]
+```
+
+---
+
+# 🤖 Machine Learning Pipeline
+
+```mermaid
+graph LR
+
+Dataset --> Cleaning
+
+Cleaning --> Encoding
+
+Encoding --> FeatureEngineering
+
+FeatureEngineering --> TrainTestSplit
+
+TrainTestSplit --> ModelTraining
+
+ModelTraining --> Evaluation
+
+Evaluation --> Prediction
+
+Prediction --> Dashboard
 ```
 
 ---
@@ -74,17 +103,24 @@ The system helps users understand accident trends, identify high-risk conditions
 # 📂 Project Structure
 
 ```text
-RoadSafeAI/
+RoadSafeAI
 │
-├── assets/
-├── components/
-├── data/
-│   ├── raw/
-│   └── processed/
-├── models/
-├── pages/
-├── services/
-├── training/
+├── assets
+│
+├── components
+│
+├── pages
+│
+├── services
+│
+├── training
+│
+├── models
+│
+├── data
+│   ├── raw
+│   └── processed
+│
 ├── Home.py
 ├── config.py
 ├── requirements.txt
@@ -94,80 +130,87 @@ RoadSafeAI/
 
 ---
 
-# 🧠 Machine Learning Workflow
+# 🛠️ Tech Stack
 
-1. Load accident datasets
-2. Clean missing values
-3. Feature engineering
-4. Encode categorical variables
-5. Train machine learning models
-6. Evaluate performance
-7. Save trained model
-8. Predict accident severity
-9. Display analytics through Streamlit
-
----
-
-# 🛠️ Technologies Used
-
-| Category        | Technologies       |
-| --------------- | ------------------ |
-| Language        | Python             |
-| Dashboard       | Streamlit          |
-| ML              | Scikit-Learn       |
-| Data Processing | Pandas, NumPy      |
-| Visualization   | Plotly, Matplotlib |
-| Model Storage   | Joblib             |
-| Version Control | Git & GitHub       |
+| Category | Technologies |
+|----------|--------------|
+| Programming | Python |
+| Frontend | Streamlit |
+| Machine Learning | Scikit-Learn |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Plotly, Matplotlib |
+| Model Serialization | Joblib |
+| Version Control | Git & GitHub |
 
 ---
 
-# 📊 Dashboard Modules
+# 📸 Application Preview
 
-* Home Dashboard
-* Accident Analytics
-* Severity Prediction
-* Data Insights
-* Risk Analysis
-* Interactive Charts
+## 🏠 Dashboard
+
+<p align="center">
+<img src="assets/screenshots/dashboard.png" width="95%">
+</p>
+
+---
+
+## 🤖 Prediction Page
+
+<p align="center">
+<img src="assets/screenshots/prediction.png" width="95%">
+</p>
+
+---
+
+## 📊 Analytics
+
+<p align="center">
+<img src="assets/screenshots/analytics.png" width="95%">
+</p>
 
 ---
 
 # 🚀 Installation
 
-Clone the repository
+## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/RoadSafeAI.git
+git clone https://github.com/roopeshARR/RoadSafeAI.git
 ```
 
-Enter the project
+## Navigate to Project
 
 ```bash
 cd RoadSafeAI
 ```
 
-Create virtual environment
+## Create Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-Activate environment
+## Activate Environment
 
-Windows
+### Windows
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Install dependencies
+### Linux / macOS
+
+```bash
+source .venv/bin/activate
+```
+
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application
+## Run Application
 
 ```bash
 streamlit run Home.py
@@ -175,53 +218,104 @@ streamlit run Home.py
 
 ---
 
-# 📈 Machine Learning Pipeline
+# 📊 Workflow
 
-* Data Cleaning
-* Missing Value Handling
-* Feature Selection
-* Encoding
-* Dataset Splitting
-* Model Training
-* Evaluation
-* Prediction
+```text
+Indian Road Accident Dataset
+            │
+            ▼
+     Data Preprocessing
+            │
+            ▼
+   Feature Engineering
+            │
+            ▼
+ Machine Learning Models
+            │
+            ▼
+    Model Evaluation
+            │
+            ▼
+    Severity Prediction
+            │
+            ▼
+ Interactive Dashboard
+```
+
+---
+
+# 📈 Dashboard Modules
+
+- 🏠 Home Dashboard
+- 📊 Accident Analytics
+- 🤖 Severity Prediction
+- 📈 Trend Analysis
+- 📉 Risk Assessment
+- 📋 Machine Learning Insights
 
 ---
 
 # 📂 Dataset
 
-This project utilizes Indian road accident datasets for:
+The project is designed to work with Indian road accident datasets.
 
-* Accident Analysis
-* Severity Prediction
-* Trend Identification
-* Risk Assessment
+Datasets are processed through:
 
-> **Note:** Large datasets may not be included in this repository due to GitHub size limitations. Replace them with your own datasets if required.
+- Data Cleaning
+- Missing Value Handling
+- Feature Engineering
+- Model Training
+- Severity Prediction
+
+> **Note:** Large datasets may not be included in the repository because of GitHub storage limits. Replace them with your own datasets if necessary.
 
 ---
 
-# 📌 Future Improvements
+# 🎯 Future Roadmap
 
-* Deep Learning models
-* Real-time prediction
-* Live traffic integration
-* Weather API integration
-* Mobile application
-* GIS-based accident mapping
-* Explainable AI (XAI)
-* Cloud deployment
+- ✅ Interactive Dashboard
+- ✅ Accident Severity Prediction
+- ✅ Machine Learning Pipeline
+- ✅ Data Analytics
+- 🔲 Deep Learning Models
+- 🔲 Explainable AI (XAI)
+- 🔲 Real-Time Traffic Integration
+- 🔲 Weather API Integration
+- 🔲 Cloud Deployment
+- 🔲 Mobile Application
 
 ---
 
 # 👨‍💻 Author
 
-**Avuthu Roopesh Reddy**
+### **Avuthu Roopesh Reddy**
 
-GitHub: https://github.com/YOUR_USERNAME
+🎓 B.Tech Computer Science Engineering  
+🏫 Anurag University
 
-LinkedIn: https://www.linkedin.com/in/avuthu-roopesh-reddy-09938b315/
+📧 **Email**  
+avuthuroopeshreddy@gmail.com
 
-Email: [avuthuroopeshreddy@gmail.com](mailto:avuthuroopeshreddy@gmail.com)
+💻 **GitHub**  
+https://github.com/roopeshARR
+
+🔗 **LinkedIn**  
+https://www.linkedin.com/in/avuthu-roopesh-reddy-09938b315/
 
 ---
+
+# ⭐ Show Your Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+It motivates future improvements and helps others discover the project.
+
+---
+
+<div align="center">
+
+### 🚗 Building Safer Roads Through Artificial Intelligence
+
+**Made with ❤️ by Avuthu Roopesh Reddy**
+
+</div>
