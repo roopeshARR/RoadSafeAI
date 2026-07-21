@@ -201,18 +201,6 @@ This project utilizes Indian road accident datasets for:
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots here after uploading them.
-
-```
-assets/screenshots/dashboard.png
-assets/screenshots/prediction.png
-assets/screenshots/analytics.png
-```
-
----
-
 # 📌 Future Improvements
 
 * Deep Learning models
