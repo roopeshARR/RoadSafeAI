@@ -249,15 +249,3 @@ LinkedIn: https://www.linkedin.com/in/avuthu-roopesh-reddy-09938b315/
 Email: [avuthuroopeshreddy@gmail.com](mailto:avuthuroopeshreddy@gmail.com)
 
 ---
-
-# ⭐ Support
-
-If you found this project useful, consider giving the repository a ⭐ on GitHub.
-
-It helps others discover the project and motivates future improvements.
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
