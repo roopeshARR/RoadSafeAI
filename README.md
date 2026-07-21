@@ -290,7 +290,7 @@ Datasets are processed through:
 
 ### **Avuthu Roopesh Reddy**
 
-🎓 B.Tech Computer Science Engineering  
+🎓 B.Tech Electronics & Communication Engineering  
 🏫 Anurag University
 
 📧 **Email**  
@@ -304,13 +304,6 @@ https://www.linkedin.com/in/avuthu-roopesh-reddy-09938b315/
 
 ---
 
-# ⭐ Show Your Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
-
-It motivates future improvements and helps others discover the project.
-
----
 
 <div align="center">
 
